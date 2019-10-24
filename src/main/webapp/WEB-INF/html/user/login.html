@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+	<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="bar bar-nav">
+	<h1 class='title'>Login</h1>
+</header>
+<div class="content">
+	<div class="list-block">
+		<ul>
+			<!-- Text inputs -->
+			<li>
+				<div class="item-content">
+					<div class="item-media"><i class="icon icon-form-name"></i></div>
+					<div class="item-inner">
+						<div class="item-title label">UserName</div>
+						<div class="item-input">
+							<input type="text" placeholder="Your user name" id="user-name">
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="item-content">
+					<div class="item-media"><i class="icon icon-form-password"></i></div>
+					<div class="item-inner">
+						<div class="item-title label">Password</div>
+						<div class="item-input">
+							<input type="password" placeholder="Password" id="password">
+						</div>
+					</div>
+				</div>
+			</li>
+			<!-- Switch (Checkbox) -->
+
+
+			<li>
+				<div class="item-content">
+					<div class="item-media"><i class="icon icon-form-name"></i></div>
+					<div class="item-inner">
+						<div class="item-title label">verification code</div>
+						<input id="code"placeholder="verification code">
+						<div class="item-input">
+							<img id="kaptcha_img" type="img" alt="click to refresh" title="click to refresh" onclick="changeVerifyCode(this)" src="../kaptcha">
+						</div>
+					</div>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+	<div class="content-block">
+		<div class="row">
+			<div class="col-50"><a href="#" class="button button-big button-fill">Register</a></div>
+			<div class="col-50"><a href="#" class="button button-big button-fill button-success" id="submit">Login</a></div>
+		</div>
+	</div>
+</div>
+</body>
+
+<script type="text/javascript" src="../resources/js/common/common.js" charset="utf-8"></script>
+<script type='text/javascript' src='../resources/js/user/login.js' charset='utf-8'></script>
+</html>
