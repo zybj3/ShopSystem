@@ -59,7 +59,7 @@
 	</div>
 	<div class="content-block">
 		<div class="row">
-			<div class="col-50"><a href="#" class="button button-big button-fill">Register</a></div>
+			<div class="col-50"><a href="#" class="button button-big button-fill" id="register-button">Register</a></div>
 			<div class="col-50"><a href="#" class="button button-big button-fill button-success" id="submit">Login</a></div>
 		</div>
 	</div>
@@ -68,4 +68,13 @@
 
 <script type="text/javascript" src="../resources/js/common/common.js" charset="utf-8"></script>
 <script type='text/javascript' src='../resources/js/user/login.js' charset='utf-8'></script>
+<script type='text/javascript'  charset='utf-8'>
+	$(function () {
+		alert("enter");
+		$('#register-button').click(function () {
+			alert("click!")
+		})
+	})
+</script>
+
 </html>
