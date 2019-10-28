@@ -1,4 +1,4 @@
-package entity;
+package com.osu.shopsystem.entity;
 
 import java.util.Date;
 import java.util.List;

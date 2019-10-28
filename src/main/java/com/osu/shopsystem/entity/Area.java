@@ -1,6 +1,5 @@
-package entity;
+package com.osu.shopsystem.entity;
 
-import javax.xml.crypto.Data;
 import java.util.Date;
 
 public class Area {
@@ -37,15 +36,15 @@ public class Area {
     private Integer priority;
     private Date creaTime;
 
-    public Data getLastEditTime() {
+    public Date getLastEditTime() {
         return lastEditTime;
     }
 
-    public void setLastEditTime(Data lastEditTime) {
+    public void setLastEditTime(Date lastEditTime) {
         this.lastEditTime = lastEditTime;
     }
 
-    private Data lastEditTime;
+    private Date lastEditTime;
 
     public Date getCreaTime() {
         return creaTime;
