@@ -1,4 +1,4 @@
-package com.osu.shopsystem.util;
+package com.osu.dianping.util;
 
 import com.google.code.kaptcha.Constants;
 

@@ -1,7 +1,7 @@
-package com.osu.shopsystem.dao;
+package com.osu.dianping.dao;
 
 
-import com.osu.shopsystem.entity.PersonInfo;
+import com.osu.dianping.entity.PersonInfo;
 import org.apache.ibatis.annotations.Param;
 
 public interface PersonInfoDao {

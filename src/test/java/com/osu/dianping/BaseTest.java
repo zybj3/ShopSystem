@@ -1,4 +1,4 @@
-package com.osu.shopsystem;
+package com.osu.dianping;
 
 //配置spring和junit整合
 

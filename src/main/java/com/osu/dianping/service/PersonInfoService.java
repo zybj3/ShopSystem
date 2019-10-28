@@ -1,6 +1,6 @@
-package com.osu.shopsystem.service;
+package com.osu.dianping.service;
 
-import com.osu.shopsystem.entity.PersonInfo;
+import com.osu.dianping.entity.PersonInfo;
 
 public interface PersonInfoService {
     int addPersonInfo(PersonInfo personInfoCondition);

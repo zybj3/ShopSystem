@@ -1,4 +1,4 @@
-package com.osu.shopsystem.entity;
+package com.osu.dianping.entity;
 import java.util.Date;
 
 public class HeadLine {

@@ -37,7 +37,7 @@
 
         <property name="configLocation" value="classpath:mybatis-config.xml" />
 
-        <property name="typeAliasesPackage" value="com.osu.shopsystem.entity"/>
+        <property name="typeAliasesPackage" value="com.osu.dianping.entity"/>
 
         <property name="mapperLocations" value="classpath:mapper/*.xml "/>
     </bean>
@@ -48,7 +48,7 @@
 
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 
-        <property name="basePackage" value="com.osu.shopsystem.dao" />
+        <property name="basePackage" value="com.osu.dianping.dao" />
     </bean>
 
 </beans>

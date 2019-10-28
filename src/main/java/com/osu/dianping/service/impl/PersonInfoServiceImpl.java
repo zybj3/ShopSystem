@@ -1,8 +1,8 @@
-package com.osu.shopsystem.service.impl;
+package com.osu.dianping.service.impl;
 
-import com.osu.shopsystem.dao.PersonInfoDao;
-import com.osu.shopsystem.entity.PersonInfo;
-import com.osu.shopsystem.service.PersonInfoService;
+import com.osu.dianping.dao.PersonInfoDao;
+import com.osu.dianping.entity.PersonInfo;
+import com.osu.dianping.service.PersonInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

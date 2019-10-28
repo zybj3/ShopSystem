@@ -1,9 +1,9 @@
-package com.osu.shopsystem.web.user;
+package com.osu.dianping.web.user;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.osu.shopsystem.entity.PersonInfo;
-import com.osu.shopsystem.service.PersonInfoService;
-import com.osu.shopsystem.util.CodeUtil;
+import com.osu.dianping.entity.PersonInfo;
+import com.osu.dianping.service.PersonInfoService;
+import com.osu.dianping.util.CodeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
