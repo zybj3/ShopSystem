@@ -1,12 +1,13 @@
-package com.osu.shopsystem.dao;
+package com.osu.dianping.dao;
 
-import java.util.Date;
-
+import com.osu.dianping.BaseTest;
+import com.osu.dianping.entity.PersonInfo;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.osu.shopsystem.BaseTest;
-import com.osu.shopsystem.entity.PersonInfo;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.PriorityQueue;
 
 public class PersonInfoDaoTest extends BaseTest {
 
@@ -38,7 +39,7 @@ public class PersonInfoDaoTest extends BaseTest {
     @Test
     public void testQueryIfUserExist(){
         String userName = "G01 person";
-        String password = "12308811";
+        String password = "123088";
         PersonInfo personInfo= personInfoDao.queryIfUserExist(userName, password);
         System.out.println(personInfo);
     }
