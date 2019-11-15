@@ -51,7 +51,8 @@ public class ShopDaoTest extends BaseTest {
         area.setAreaId(11);
         Shop shop = new Shop();
         shop.setShopId(1L);
-        shop.setShopDesc("test desc 22");
+        shop.setShopDesc("test desc 12");
+        
         shop.setShopAddr("test address22");
         shop.setPhone("test phone22");
         shop.setAdvice("test advice22");
