@@ -33,7 +33,7 @@ public class ShopDaoTest extends BaseTest {
         shop.setShopDesc("test");
         shop.setShopAddr("test");
         shop.setPhone("test");
-        shop.setShopImg("test44");
+        shop.setShopImg("test444");
         shop.setCreateTime(new Date());
         shop.setEnableStatus(1);
         shop.setLastEditTime(new Date());
