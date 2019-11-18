@@ -30,7 +30,7 @@ public class PersonInfoDaoTest extends BaseTest {
 
     @Test
     public void testQueryPersonInfoByUserName(){
-        String userName = "G01 person";
+        String userName = "G01 persons";
         int count = personInfoDao.queryPersonInfoByUserName(userName);
         System.out.println(count);
 
@@ -38,7 +38,7 @@ public class PersonInfoDaoTest extends BaseTest {
 
     @Test
     public void testQueryIfUserExist(){
-        String userName = "G01 person";
+        String userName = "G01 persons";
         String password = "123088";
         PersonInfo personInfo= personInfoDao.queryIfUserExist(userName, password);
         System.out.println(personInfo);
