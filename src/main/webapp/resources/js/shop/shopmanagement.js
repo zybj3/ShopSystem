@@ -13,7 +13,7 @@ $(function() {
 			$('#shopInfo')
 			.attr('href', '/dianping/shopadmin/shopoperation?shopId=' + shopId);
 
-			$('#shopName').text('Your current shop is  ' + shopName)
+			$('#shopName').text('Your current shops is  ' + shopName)
 
 		}
 	});
