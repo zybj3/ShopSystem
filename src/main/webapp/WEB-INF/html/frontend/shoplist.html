@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html xmlns:z-index="http://www.w3.org/1999/xhtml">
+<html xmlns:top="http://www.w3.org/1999/xhtml" xmlns:z-index="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Shop List</title>
-	<meta content="initial-scale=1, maximum-scale=1" name="viewport">
-	<link href="/favicon.ico" rel="shortcut icon">
-	<meta content="yes" name="apple-mobile-web-app-capable">
-	<meta content="black" name="apple-mobile-web-app-status-bar-style">
-	<link href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css" rel="stylesheet">
-	<link href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css" rel="stylesheet">
-	<link href="../resources/css/frontend/shoplist.css" rel="stylesheet">
-	<link href="../resources/css/autocomplete/easy-autocomplete.min.css" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+	<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+	<link rel="stylesheet" href="../resources/css/frontend/shoplist.css">
+	<link rel="stylesheet" href="../resources/css/autocomplete/easy-autocomplete.min.css" >
 </head>
 <body>
 <div class="page-group">
 	<div class="page">
 		<header class="bar bar-nav">
-			<a class="button button-link button-nav pull-left" data-transition='slide-out'
-			   external href="index"> <span
+			<a class="button button-link button-nav pull-left" external
+			   href="index" data-transition='slide-out'> <span
 					class="icon icon-left"></span> Return
 			</a>
 			<h1 class="title">Shop List</h1>
@@ -27,8 +27,8 @@
 			<div class="ui-widget">
 				<!-- 搜索栏 -->
 				<div class="search-input" z-index:99999;>
-					<!--					<label class="icon icon-search" for="search"></label>-->
-					<input id='search' placeholder='Type keyWord to Search...' type="search"/>
+<!--					<label class="icon icon-search" for="search"></label>-->
+					<input type="search" id='search' placeholder='Type keyWord to Search...' />
 				</div>
 			</div>
 		</div>
@@ -37,7 +37,7 @@
 		</div>
 
 		<nav class="bar bar-tab">
-			<a class="tab-item" external href="/dianping/frontend/index"> <span
+			<a class="tab-item" href="/dianping/frontend/index" external> <span
 					class="icon icon-home"></span> <span class="tab-label">Home Page</span>
 			</a> <a class="tab-item" href="#" id="me"> <span
 				class="icon icon-me"></span> <span class="tab-label">My Account</span>
@@ -87,10 +87,8 @@
 			<div class="content-block">
 				<div class="row">
 
-					<div class="col-50" id="previousbutton"><a class="button button-big button-fill" href="#"
-															   id="previous">previous page</a></div>
-					<div class="col-50" id="nextbutton"><a class="button button-big button-fill" href="#" id="next">next
-						page</a></div>
+					<div class="col-50" id="previousbutton"><a href="#" class="button button-big button-fill" id="previous">previous page</a></div>
+					<div class="col-50" id="nextbutton"><a href="#" class="button button-big button-fill" id="next">next page</a></div>
 				</div>
 			</div>
 
@@ -103,22 +101,21 @@
 <div class="panel panel-right panel-reveal" id="panel-right-demo">
 	<div class="content-block">
 		<p>
-			<a class="close-panel" href="#" id="log-out" usertype="1">Log out</a>
+			<a href="#" usertype="1" class="close-panel" id="log-out">Log out</a>
 		</p>
 		<!-- Click on link with "close-panel" class will close panel -->
 	</div>
 </div>
 
-<script charset='utf-8' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' type='text/javascript'></script>
-<script charset='utf-8' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' type='text/javascript'></script>
-<script charset='utf-8' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' type='text/javascript'></script>
-<script charset='utf-8' src='../resources/js/common/common.js' type='text/javascript'></script>
-<script charset='utf-8' src='../resources/js/common/date-format.js' type='text/javascript'></script>
-<script charset='utf-8' src='../resources/js/frontend/shoplist.js' type='text/javascript'></script>
-<script charset='utf-8' src='../resources/js/local/login.js' type='text/javascript'></script>
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='../resources/js/common/common.js' charset='utf-8'></script>
+<script type='text/javascript' src='../resources/js/common/date-format.js' charset='utf-8'></script>
+<script type='text/javascript' src='../resources/js/frontend/shoplist.js' charset='utf-8'></script>
+<script type='text/javascript' src='../resources/js/local/login.js' charset='utf-8'></script>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script charset='utf-8' src="../resources/js/autocomplete/jquery.easy-autocomplete.min.js"
-		type='text/javascript'></script>
+<script type='text/javascript' src="../resources/js/autocomplete/jquery.easy-autocomplete.min.js" charset='utf-8'></script>
 
 </body>
 </html>
