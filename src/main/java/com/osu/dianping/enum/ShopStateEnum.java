@@ -1,8 +1,7 @@
 package com.osu.dianping.enums;
 
 public enum ShopStateEnum {
-    CHECK(0, "审核中"), OFFLINE(-1, "非法店铺"), SUCCESS(1, "操作成功"), PASS(2, "通过验证"),
-    INNER_ERROR(-1001, "内部系统错误"), NULL_SHOPID(-1002, "ShopId 为空"), NULL_SHOP(-1003, "Shop信息为空");
+    SUCCESS(1, "success"), NULL_SHOPID(-1002, "ShopId is null"), NULL_SHOP(-1003, "Shop is null");
     private int state;
     private String stateInfo;
 

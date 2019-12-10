@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>Shop Detail</title>
+	<meta content="initial-scale=1, maximum-scale=1" name="viewport">
+	<link href="/favicon.ico" rel="shortcut icon">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<link href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css"
+		  rel="stylesheet">
+	<link href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"
+		  rel="stylesheet">
+	<link href="../resources/css/frontend/shopdetail.css" rel="stylesheet">
+</head>
+<body>
+<div class="page-group">
+	<div class="page">
+		<header class="bar bar-nav">
+			<a class="button button-link button-nav pull-left" data-transition='slide-out' external
+			   href="#" onClick="javascript :history.back(-1);">
+				<span class="icon icon-left"></span> Return
+			</a>
+
+			<a class="button open-about pull-right" href="#"><span class="icon"></span> Add Review </a>
+
+
+			<h1 class="title" id="shop-name">Shop Detail</h1>
+			<!-- 				<a class="button button-link button-nav pull-right" external
+				href="#" id="exchangelist" data-transition='slide-out'> 奖品兑换 <span
+				class="icon icon-right"></span>
+			</a> -->
+
+			<!--			<div class="content">-->
+			<!--				<div class="content-block">-->
+			<!--					<p><a href="#" class="open-about">Open About Popup </a></p>-->
+			<!--				</div>-->
+
+			<!--			</div>-->
+		</header>
+		<nav class="bar bar-tab">
+			<a class="tab-item" external href="/dianping/frontend/index"> <span
+					class="icon icon-home"></span> <span class="tab-label">Home Page</span>
+			</a> <a class="tab-item" href="#" id="me"> <span
+				class="icon icon-me"></span> <span class="tab-label">My Account</span>
+		</a>
+		</nav>
+		<div class="content infinite-scroll infinite-scroll-bottom"
+			 data-distance="100">
+			<!-- 这里是页面内容区 -->
+			<div class="shop-detail-dev">
+				<div class="card">
+					<div class="card-header color-white no-border no-padding"
+						 valign="bottom">
+						<img alt="" class='card-cover' id="shop-cover-pic" src="">
+					</div>
+					<div class="card-content">
+						<div class="card-content-inner">
+							<p class="color-gray">
+								<span id="shop-update-time"></span>
+							</p>
+							<p id="shop-desc"></p>
+						</div>
+					</div>
+					<div class="card-footer">
+						<span id="shop-addr"></span> <span id="shop-phone"></span>
+					</div>
+				</div>
+			</div>
+
+			<!-- 商品类别列表展示区 -->
+			<div class="shopdetail-button-div" id="shopdetail-button-div">
+				<!-- <a href="#" class="button">所有货物</a>
+					<a href="#" class="button">吃的</a>
+					<a href="#" class="button">喝的</a>
+					<a href="#" class="button">Usual Button 1</a>
+					<a href="#" class="button">Usual Button 1</a>
+					<a href="#" class="button">Usual Button 1</a> -->
+			</div>
+
+			<!--review的按钮在这呢-->
+			<div class="review-button-div" id="review-button">
+				<a class="button button-fill" href="#" style="color: #000000;">View Shop Reviews</a>
+			</div>
+
+			<!-- 商品名字搜索区 -->
+			<div class="detail-search">
+				<div class="searchbar">
+					<a class="searchbar-cancel">Cancel</a>
+					<div class="search-input">
+						<label class="icon icon-search" for="search"></label> <input
+							id='search' placeholder='Enter KeyWord...' type="search"/>
+					</div>
+				</div>
+			</div>
+
+			<!-- 商品列表展示区 -->
+			<div class="list-div">
+				<!-- <div class="card">
+						<div class="card-header">传统火锅店</div>
+						<div class="card-content">
+							<div class="list-block media-list">
+								<ul>
+									<li class="item-content">
+										<div class="item-media">
+											<img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44">
+										</div>
+										<div class="item-inner">
+											<div class="item-subtitle"></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-footer">
+							<span>2015/01/15</span>
+							<span>5 评论</span>
+						</div>
+					</div> -->
+			</div>
+			<div class="infinite-scroll-preloader">
+				<div class="preloader"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--侧边栏  -->
+	<div class="panel-overlay"></div>
+	<div class="panel panel-right panel-reveal" id="panel-right-demo">
+		<div class="content-block">
+			<p>
+				<a class="close-panel" href="#" id="log-out" usertype="1">Log out</a>
+			</p>
+			<!-- Click on link with "close-panel" class will close panel -->
+		</div>
+	</div>
+
+	<!--popup 在这呢  -->
+	<div class="popup popup-about">
+		<div class="content">
+			<div class="list-block">
+				<ul>
+					<!-- Date -->
+					<li class="align-top">
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-input">
+									<textarea id="review-text" placeholder="Please Enter your review here"
+											  style="background-color: #b5c6cb"></textarea>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="content-block">
+				<div class="row">
+					<div class="col-50"><a class="button button-big button-fill close-popup" href="#">Cancel</a></div>
+					<div class="col-50"><a class="button button-big button-fill" href="#" id="submit">Submit Review</a>
+					</div>
+					<!--					<p><a href="#" class="close-popup">Close popup</a></p>-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script charset='utf-8' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' type='text/javascript'></script>
+	<script charset='utf-8' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' type='text/javascript'></script>
+	<script charset='utf-8' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' type='text/javascript'></script>
+	<script charset='utf-8' src='../resources/js/common/common.js' type='text/javascript'></script>
+	<script charset='utf-8' src='../resources/js/frontend/shopdetail.js' type='text/javascript'></script>
+	<script charset='utf-8' src='../resources/js/local/login.js' type='text/javascript'></script>
+</body>
+</html>

@@ -24,13 +24,10 @@ public class ShopServiceImpl implements ShopService {
     @Override
     @Transactional
     public ShopExecution addShop(Shop shop, ImageHolder thumbnail) {
-        //空值判断
         if (shop == null) {
             return new ShopExecution(ShopStateEnum.NULL_SHOP);
         }
         try {
-            //给店铺信息赋初始值
-            //审核中
             shop.setEnableStatus(0);
             shop.setCreateTime(new Date());
             shop.setLastEditTime(new Date());
@@ -38,7 +35,7 @@ public class ShopServiceImpl implements ShopService {
             //添加店铺信息
             int effectiveNum = shopDao.insertShop(shop);
             if (effectiveNum<=0){
-                throw new RuntimeException("店铺创建失败");
+                throw new RuntimeException("fail");
             }else {
                 if (thumbnail.getImage()!=null){
                     //save image
@@ -48,10 +45,10 @@ public class ShopServiceImpl implements ShopService {
                         throw new RuntimeException("addShopImg error" + e.getMessage());
                     }
 
-                    //更新店铺的图片地址
+                    //update image
                     effectiveNum = shopDao.updateShop(shop);
                     if (effectiveNum<=0){
-                        throw new RuntimeException("更新图片地址失败");
+                        throw new RuntimeException("cannot update image info");
                     }
 
                 }
